@@ -1,4 +1,4 @@
-# Noroff Frontend Developer / Javascript 1 / Module Assignment 3
+# Module Assignment 3 - Javascript 1 | Noroff Frontend Developer programme
 
 ## Questions
 
