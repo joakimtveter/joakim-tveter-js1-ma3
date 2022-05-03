@@ -21,7 +21,7 @@ Go to [https://rawg.io/apidocs](https://rawg.io/apidocs) and get an API key whic
 You'll be given an API Key you can add as a "key" parameter in your fetch request.
 
 Make a call to the following API endpoint replacing `INSERTAPIKEYHERE` with the key given to you from the Rawg API.
-https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-rating&key=INSERTAPIKEYHERE
+`https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-rating&key=INSERTAPIKEYHERE`
 
 Loop through the results and display the following properties in HTML, but only for the first eight results:
 
