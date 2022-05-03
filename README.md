@@ -16,7 +16,7 @@ return a % b;
 
 Make a call to the Rawg API.
 
-Go to (https://rawg.io/apidocs[)https://rawg.io/apidocs] and get an API key which you’ll use as part of the endpoint you’re making an API call to. You can use `https://noroff.no` for the URL and Noroff Assignment for the description.
+Go to [https://rawg.io/apidocs](https://rawg.io/apidocs) and get an API key which you’ll use as part of the endpoint you’re making an API call to. You can use `https://noroff.no` for the URL and Noroff Assignment for the description.
 
 You'll be given an API Key you can add as a "key" parameter in your fetch request.
 
