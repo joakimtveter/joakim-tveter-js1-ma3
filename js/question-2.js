@@ -9,7 +9,8 @@ async function getGames(endPoint) {
     const data = await response.json();
     showGames(data);
   } catch (error) {
-    showError(error);
+    console.error(error);
+    showError('Error: Failed to fetch data');
   }
 }
 
