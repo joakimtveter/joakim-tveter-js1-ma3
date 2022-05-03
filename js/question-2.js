@@ -26,7 +26,7 @@ function showGames(games) {
     const noOfGameTags = document.createElement('p');
 
     gameTitle.innerText = name;
-    gameRating.innerText = `Rating: ${rating}/5`;
+    gameRating.innerText = `Rating: ${rating} / 5`;
     noOfGameTags.innerText = `${numberOfTags} tags`;
 
     singleGameContainer.appendChild(gameTitle);
