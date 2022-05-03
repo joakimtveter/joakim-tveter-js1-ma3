@@ -1,43 +1,43 @@
 h1 {
-  text-align: center;
+    text-align: center;
 }
 
 .games {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
 }
 
 .games > div {
-  border: 1px solid black;
-  padding: 1rem;
+    border: 1px solid black;
+    padding: 1rem;
 }
 
 .error {
-  border: 2px solid hsl(0, 100%, 50%);
-  background-color: hsl(0, 100%, 85%);
-  padding: 1rem;
-  width: fit-content;
-  margin-inline: auto;
-  grid-column: 1 / -1;
+    border: 2px solid hsl(0, 100%, 50%);
+    background-color: hsl(0, 100%, 85%);
+    padding: 1rem;
+    width: fit-content;
+    margin-inline: auto;
+    grid-column: 1 / -1;
 }
 
 .loading {
-  border: 15px solid hsl(0, 0%, 93%);
-  border-top: 15px solid hsl(293, 83%, 55%);
-  border-radius: 50%;
-  width: 75px;
-  height: 75px;
-  margin-left: auto;
-  margin-right: auto;
-  animation: spin 2.5s linear infinite;
+    border: 15px solid hsl(0, 0%, 93%);
+    border-top: 15px solid hsl(293, 83%, 55%);
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: spin 2.5s linear infinite;
 }
 
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
