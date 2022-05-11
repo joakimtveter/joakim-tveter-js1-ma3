@@ -7,7 +7,6 @@ const key = 'b61e781d5a3a4477bad0ef9601706c16';
 const url = `https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-rating&key=${key}`;
 let page = 1;
 let gamesPerPage = 8;
-let gamesCount;
 let totalPages;
 
 const getGames = async (endPoint, page, pageSize) => {
@@ -24,8 +23,7 @@ const getGames = async (endPoint, page, pageSize) => {
 };
 
 const renderGames = (games) => {
-    gamesCount = games.count;
-    totalPages = Math.ceil(gamesCount / gamesPerPage);
+    totalPages = Math.ceil(games.count / gamesPerPage);
     games.results.forEach((game) => {
         const name = game.name || 'Unknown name';
         const rating = game.rating || 'No Rating';
@@ -50,6 +48,7 @@ const renderGames = (games) => {
     pagination.style.display = 'flex';
     document.querySelector('#current-page').innerText = page;
     document.querySelector('#total-pages').innerText = totalPages;
+    disablePaginationButton();
 };
 
 const showError = (msg) => {
@@ -81,6 +80,10 @@ const handlePrevPage = () => {
     getGames(url, page, gamesPerPage);
 };
 
+disablePaginationButton = () => {
+    page === 1 ? (prevPage.disabled = true) : (prevPage.disabled = false);
+    page === totalPages ? (nextPage.disabled = true) : (nextPage.disabled = false);
+};
 prevPage.addEventListener('click', handlePrevPage);
 nextPage.addEventListener('click', handleNextPage);
 
