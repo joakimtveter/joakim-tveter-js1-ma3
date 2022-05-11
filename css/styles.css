@@ -6,11 +6,18 @@ h1 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
+    margin-bottom: 2rem;
 }
 
 .games > div {
     border: 1px solid black;
     padding: 1rem;
+}
+
+.pagination {
+    display: none;
+    gap: 2rem;
+    justify-content: center;
 }
 
 .error {
@@ -24,7 +31,7 @@ h1 {
 
 .loading {
     border: 15px solid hsl(0, 0%, 93%);
-    border-top: 15px solid hsl(293, 83%, 55%);
+    border-top: 15px solid hotpink;
     border-radius: 50%;
     width: 75px;
     height: 75px;
